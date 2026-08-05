@@ -195,6 +195,7 @@ class SponsorBlockHandler {
 
     const videoDuration = this.video.duration;
     const slider = document.querySelector('div[idomkey="slider"]');
+    if (!slider) return setTimeout(() => this.buildOverlay(), 100);
 
     this.segmentsoverlay = document.createElement('div');
 
