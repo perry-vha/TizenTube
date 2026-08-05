@@ -243,7 +243,7 @@ class SponsorBlockHandler {
           }
         }
 
-        if (this._overlayHidden || this.video?.ended || document.querySelector('ytlr-progress-bar').getAttribute('hybridnavfocusable') === 'false') {
+        if (this._overlayHidden || this.video?.ended) {
           this.segmentsoverlay.style.setProperty('display', 'none', 'important');
         } else {
           this.segmentsoverlay.style.setProperty('display', 'block', 'important');
